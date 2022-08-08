@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/*!
+ * Bootstrap v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+:root {
+  --green: #395B64;
+  --white: #fff;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #A5C9CA;
+  --light: #E7F6F2;
+  --dark: #2C3333;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Raleway", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;    
+          box-sizing: border-box;
+}
+body{
+    color: var(--dark);
+    padding: 0;
+    margin: 0;
+    /* background-color: rgb(228, 224, 224) ; */
+}
+a {
+    color: var(--light);
+}
+a:hover {
+    color: var(--light);
+    opacity: 0.5;
+}
+.avatar {
+    max-width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+.bg-header {
+    background-color: var(--green);
+    color: var(--light);
+}
+.btn-app {
+    background-color: var(--green);
+    color: var(--light);
+}
+.btn-app:hover {
+    background-color: var(--green);
+    color: var(--light);
+    opacity: 0.5;
+}
+.border-app{
+    border-color: var(--green);
+}
+
+.img-show img{
+    width: 100%;
+}
