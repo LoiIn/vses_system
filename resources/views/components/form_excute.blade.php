@@ -38,6 +38,15 @@
     </div>
     <div class="form-group text-center">
         <button type="submit" class="btn btn-app" id="excute" form="excute-form">Thực thi</button>
-        <button type="button" class="btn btn-app" id="reset">Hủy bỏ</button>
+        <a class="btn btn-danger" id="reset" href="{{ route('home') }}">Hủy bỏ</a>
     </div>
 </form>
+
+@section('vses')
+    <script>
+        // $('#excute').click(function (e) { 
+        //     e.preventDefault();
+        //     console.log("hihi")
+        // });
+    </script>
+@endsection

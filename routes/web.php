@@ -27,9 +27,7 @@ Route::get('/home', function(){
 })->name('home')->middleware('auth');
 
 Route::post('/estimation/excute', [SpeedEstimateController::class, 'excute'])->name('estimation.excute')->middleware('auth');
-Route::get('/download/{estimation}', [SpeedEstimateController::class, 'download'])->middleware('auth');
-Route::get('/estimations', [SpeedEstimateController::class, 'index'])->name('estimation.index')->middleware('auth');
-Route::get('/estimations/{estimation}', [SpeedEstimateController::class, 'show'])->name('estimation.show')->middleware('auth');
+
 // ===============Auth================
 Route::get('/register', [RegisterController::class, 'create'])->name('register.create')->middleware('guest');
 Route::post('/register', [RegisterController::class, 'register'])->name('register.store')->middleware('guest');

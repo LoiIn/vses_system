@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +24,6 @@
         $.ajaxSetup({ headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') }});
     </script>
 </head>
-
 <body>
     @include('components.header')
     <div class="container-fluid mt-5">
@@ -54,36 +52,19 @@
                         </table>
                     </div>
                 @endif
-                {{-- <div class="row mb-4 mt-2 justify-content-center">
-                    <a class="btn btn-app text-light" href="">Download CSV</a>
-                </div> --}}
-                <div class="row border border-app mt-5">
-                    <div class="container">
-                        <div class="row">
-                            {{-- @foreach(File::glob(public_path('storage/images').'/*') as $path)
-                                <div class="col-sm-3 p-4 text-center">
-                                    <img class="img-thumbnail h-5" src="{{ str_replace(public_path(), '', $path) }}" alt="Image Result">
-                                    <p>ID-1</p>
-                                </div>
-                            @endforeach --}}
-                            @if (isset($images))
-                                @foreach ($images as $img)
-                                    <div class="col-sm-6 p-4 text-center img-show">
-                                        <img src="{{$img}}">
-                                        {{-- <img class="img-thumbnail h-5" src="{{$img}}" alt="Image Result"> --}}
-                                    </div>
-                                @endforeach
-                            @endif
-                        </div>
+                @if (isset($images))
+                    <div class="row border border-app mt-5">
+                        @foreach ($images as $img)
+                            <div class="col-sm-6 p-4 text-center img-show">
+                                <img src="{{$img}}">
+                            </div>
+                        @endforeach
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 pt-5 pr-4 loiin-form">
-                @include('components.form_excute')
+                @endif
             </div>
         </div>
     </div>
+    @include('components.back')
 </body>
-
 </html>
 

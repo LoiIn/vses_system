@@ -29,6 +29,7 @@
 <body>
     @include('layouts.master')
     @yield('content')
+    @yield('vses')
 </body>
 
 </html>
