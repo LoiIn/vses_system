@@ -26,9 +26,9 @@ class EstimateVideoRequest extends FormRequest
     public function rules()
     {
         return [
-            'video' => 'required|mimes:mp4|max:25600',
-            'rwf' => 'required',
-            'rws' => 'required'
+            // 'video' => 'required|mimes:mp4|max:25600',
+            // 'rwf' => 'required',
+            // 'rws' => 'required'
         ];
     }
 

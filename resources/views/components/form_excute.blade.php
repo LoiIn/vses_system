@@ -6,19 +6,19 @@
     <div class="form-group">
         <label for="param1">Loại phương tiện</label>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="all" name="all">
+            <input class="form-check-input" type="checkbox" value="all" name="type[]">
             <label class="form-check-label" for="all">
               Tất cả
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="motobike" name="motobike" checked>
-            <label class="form-check-label" for="motobike">
+            <input class="form-check-input" type="checkbox" value="motorbike" name="type[]" checked>
+            <label class="form-check-label" for="motorbike">
               Xe máy
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="car" name="car">
+            <input class="form-check-input" type="checkbox" value="car" name="type[]">
             <label class="form-check-label" for="car">
               Ô tô
             </label>
@@ -33,8 +33,8 @@
         <input type="text" class="form-control" id="rws" name="rws" placeholder="Ví dụ: 12.0">
     </div>
     <div class="form-group">
-        <label for="rws">Giới hạn tốc độ (km/h)</label>
-        <input type="text" class="form-control" id="speed" name="speed" placeholder="Ví dụ: 20">
+        <label for="limit">Giới hạn tốc độ (km/h)</label>
+        <input type="text" class="form-control" id="limit" name="limit" placeholder="Ví dụ: 20">
     </div>
     <div class="form-group text-center">
         <button type="submit" class="btn btn-app" id="excute" form="excute-form">Thực thi</button>

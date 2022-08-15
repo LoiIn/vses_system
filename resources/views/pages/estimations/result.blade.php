@@ -69,7 +69,7 @@
                             @if (isset($images))
                                 @foreach ($images as $img)
                                     <div class="col-sm-6 p-4 text-center img-show">
-                                        <img src="{{ asset('images/' . $img->getFilename()) }}">
+                                        <img src="{{$img}}">
                                         {{-- <img class="img-thumbnail h-5" src="{{$img}}" alt="Image Result"> --}}
                                     </div>
                                 @endforeach
