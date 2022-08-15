@@ -35,7 +35,20 @@
                             <thead class="thead-light">
                                 <tr>
                                     @foreach ($datas[0] as $col)
-                                        <th scope="col">{{ $col }}</th>
+                                        @switch($col)
+                                            @case("ID")
+                                                <th scope="col">ID</th>
+                                                @break
+                                            @case("ClassName")
+                                                <th scope="col">Loại phương tiện</th>
+                                                @break
+                                            @case("Speed")
+                                                <th scope="col">Tốc độ</th>
+                                                @break
+                                            @default
+                                                <th scope="col">Thời gian xuất hiện</th>
+                                                @break
+                                        @endswitch
                                     @endforeach
                                 </tr>
                             </thead>
